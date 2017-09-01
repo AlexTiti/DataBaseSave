@@ -25,6 +25,9 @@ import rx.schedulers.Schedulers;
  */
 public class Ac {
     public void action(){
+
+
+
         Observable.just("hello").map(new Func1<String, Integer>() {
             @Override
             public Integer call(String s) {
