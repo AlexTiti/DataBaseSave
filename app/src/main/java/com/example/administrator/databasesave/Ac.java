@@ -28,6 +28,9 @@ public class Ac {
 
 
 
+
+
+
         Observable.just("hello").map(new Func1<String, Integer>() {
             @Override
             public Integer call(String s) {
