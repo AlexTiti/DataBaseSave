@@ -27,11 +27,7 @@ public class Ac {
     public void action(){
 
 
-
-
-
-
-        Observable.just("hello").map(new Func1<String, Integer>() {
+        Observable.just("AAAA").map(new Func1<String, Integer>() {
             @Override
             public Integer call(String s) {
 
@@ -40,6 +36,7 @@ public class Ac {
         }).subscribe(new Action1<Integer>() {
             @Override
             public void call(Integer integer) {
+
 
             }
         });
