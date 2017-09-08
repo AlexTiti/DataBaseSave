@@ -1,24 +1,13 @@
 package com.example.administrator.databasesave;
 
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.v4.util.TimeUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-import java.util.function.Consumer;
 
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
 import okhttp3.OkHttpClient;
-import okhttp3.RequestBody;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -30,8 +19,6 @@ import rx.functions.Action1;
 import rx.functions.Func1;
 import rx.functions.Func2;
 import rx.schedulers.Schedulers;
-
-;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -56,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
         // UserManger userManger = UserManger.getInstance(getApplication());
 
-      final   ArrayList<String> list = new ArrayList<String>();
+      final   ArrayList<String> list = new ArrayList();
         list.add("A");
         list.add("B");
         list.add("E");

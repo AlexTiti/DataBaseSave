@@ -27,7 +27,7 @@ public class Ac {
     public void action(){
 
 
-        Observable.just("AAAA").map(new Func1<String, Integer>() {
+        Observable.just("BBBBBBBBBBBBBB").map(new Func1<String, Integer>() {
             @Override
             public Integer call(String s) {
 
@@ -42,9 +42,14 @@ public class Ac {
         });
 
 
-        ArrayList<String > list = new ArrayList<String>() ;
+        ArrayList<String > list = new ArrayList() ;
         list.add("A");
         list.add("B");
+        list.add("C");
+        list.add("D");
+        list.add("E");
+        list.add("DDDDD");
+
         Observable.just(list).flatMap(new Func1<ArrayList<String>, Observable<?>>() {
             @Override
             public Observable<?> call(ArrayList<String> stringArrayList) {
